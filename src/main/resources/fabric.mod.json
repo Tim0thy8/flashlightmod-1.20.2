@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "flashlightmod",
+	"version": "${version}",
+	"name": "FlashlightMod",
+	"description": "This mod adds a flashlight!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/flashlightmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.timothy8.flashlightmod.FlashlightMod"
+		],
+		"client": [
+			"com.timothy8.flashlightmod.FlashlightModClient"
+		],
+		"fabric-datagen": [
+			"com.timothy8.flashlightmod.FlashlightModDataGenerator"
+		]
+	},
+	"mixins": [
+		"flashlightmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
